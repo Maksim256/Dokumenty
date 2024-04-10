@@ -4,9 +4,10 @@ using Dokumenty.Repository;
 
 
 
-var processOrderRpository = new ProcessOrderRepository();
+var processOrderRpository = new GenericProcessOrderRepository<int>();
 processOrderRpository.Add(new ProcessOrdery { PO = 123456789 });
 processOrderRpository.Add(new ProcessOrdery { PO = 234567890 });
 processOrderRpository.Add(new ProcessOrdery { PO = 345678901 });
+
 
 processOrderRpository.Save();
